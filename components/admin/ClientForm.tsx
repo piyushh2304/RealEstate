@@ -18,6 +18,10 @@ export function ClientForm() {
     const formRef = useRef<HTMLFormElement>(null);
 
     const handleSubmit = async (formData: FormData) => {
+        if (!imageFile) {
+            toast.error("Please select an image first.");
+            return;
+        }
         setLoading(true);
         try {
             let imageUrl = "";
