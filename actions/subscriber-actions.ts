@@ -12,6 +12,8 @@ export async function subscribeToNewsletter(formData: FormData) {
 
     try {
         await Subscriber.create({ email });
+        const { revalidatePath } = await import("next/cache");
+        revalidatePath("/admin/subscribers");
         return { success: true };
     } catch (error) {
         return { success: false, error: "Email already subscribed or invalid." };
