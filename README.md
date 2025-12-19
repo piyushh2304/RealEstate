@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RealTrust - Real Estate Solutions
 
-## Getting Started
+A comprehensive full-stack application designed for real estate consultation, design, and marketing. This project features a high-end landing page and a robust admin panel for managing projects, clients, and leads.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Landing Page
+- **Interactive Hero Section**: High-performance "Background Beams with Collision" effect.
+- **Project Showcase**: Dynamically fetched project list with details.
+- **Client Testimonials**: "Happy Clients" section showcasing user feedback.
+- **Lead Generation**: Integrated contact form and newsletter subscription.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop.
+- **Dark/Light Mode**: Seamless theme switching with system detection.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Admin Panel
+- **Dashboard**: Overview of project and lead status.
+- **Project Management**: Full CRUD for projects including automated image cropping (450x350).
+- **Client Management**: Manage testimonial data and designations.
+- **Contact Inquiries**: View and track user submissions from the contact form.
+- **Subscriber List**: Manage newsletter email subscriptions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: Next.js, Tailwind CSS, Framer Motion.
+- **Backend**: Next.js Server Actions, MongoDB (Mongoose).
+- **Storage**: Cloudinary (Image hosting & optimization).
+- **Theme**: next-themes.
+- **Form Handling**: react-hook-form, zod.
 
-## Learn More
+## 📦 Setup Instructions
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository**:
+   ```bash
+   git clone <your-repo-url>
+   cd <project-folder>
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Environment Variables**:
+   Create a `.env` file in the root and add your credentials:
+   ```env
+   MONGODB_URI=your_mongodb_uri
+   CLOUDINARY_CLOUD_NAME=your_cloud_name
+   CLOUDINARY_API_KEY=your_api_key
+   CLOUDINARY_API_SECRET=your_api_secret
+   ```
 
-## Deploy on Vercel
+4. **Run development server**:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+5. **Build for production**:
+   ```bash
+   npm run build
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 License
+
+All rights reserved.
